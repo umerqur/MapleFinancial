@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-bg: #FBFAF4;
+  --ink: #0A0F0D;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--ink);
+  font-feature-settings: "ss01", "cv11";
+}
+
+/* Editorial small caps eyebrow */
+.eyebrow {
+  @apply inline-flex items-center gap-2 uppercase text-[11px] font-semibold tracking-[0.22em] text-pine-700;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.5;
+}
+
+/* Editorial rule */
+.rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(11,47,32,0.2), transparent);
+}
+
+/* Noise texture overlay */
+.noise {
+  background-image: radial-gradient(rgba(11,47,32,0.045) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+/* Selection */
+::selection {
+  background: #0B2F20;
+  color: #F5F1E6;
+}
+
+/* Fancy underline link */
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.link-underline:hover {
+  background-size: 0% 1px;
+  background-position: 100% 100%;
+}
+
+/* Dotted divider */
+.dot-rule {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 1px;
+  opacity: 0.3;
+}
+
+/* Number ticker */
+.num-display {
+  font-variant-numeric: tabular-nums lining-nums;
+}
