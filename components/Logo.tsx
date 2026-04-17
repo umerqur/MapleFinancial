@@ -15,10 +15,10 @@ export function Logo({ className = "", inverse = false }: Props) {
       >
         <circle cx="20" cy="20" r="19.25" stroke={ink} strokeWidth="1.2" />
         <path
-          d="M20 9.5 L22 14 L26.5 13 L25 17 L29 19.5 L25.5 21.5 L27 26 L22.5 25 L20 29.5 L17.5 25 L13 26 L14.5 21.5 L11 19.5 L15 17 L13.5 13 L18 14 Z"
+          d="M20 9 L21.8 13.2 L25.2 12.3 L23.8 15.8 L28.2 17.3 L24.8 19.8 L27.2 24.8 L21.8 23.3 L20 26.8 L18.2 23.3 L12.8 24.8 L15.2 19.8 L11.8 17.3 L16.2 15.8 L14.8 12.3 L18.2 13.2 Z"
           fill={accent}
         />
-        <line x1="20" y1="29.5" x2="20" y2="33" stroke={accent} strokeWidth="1.2" />
+        <line x1="20" y1="26.8" x2="20" y2="30.6" stroke={accent} strokeWidth="1.2" strokeLinecap="round" />
       </svg>
       <div className="flex flex-col leading-none">
         <span
