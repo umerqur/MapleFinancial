@@ -1,10 +1,32 @@
+import Image from "next/image";
 import { ArrowRight, CheckCircle2, Clock, ShieldCheck } from "lucide-react";
 import { DealCard } from "./DealCard";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-cream-50">
-      {/* Topographic background lines */}
+      {/* Layer 1 — faint skyline mood image (behind everything) */}
+      <div
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+        aria-hidden
+      >
+        <Image
+          src="/toronto-skyline.svg"
+          alt=""
+          fill
+          priority={false}
+          sizes="100vw"
+          className="select-none object-cover object-bottom opacity-[0.07] grayscale saturate-0 [transform:scale(1.04)] md:opacity-[0.09]"
+        />
+      </div>
+
+      {/* Layer 2 — cream wash to keep the palette and push the image subconscious */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-cream-50/90 via-cream-50/80 to-cream-50/95"
+        aria-hidden
+      />
+
+      {/* Layer 3 — topographic background lines (above image, below content) */}
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.05]"
         aria-hidden
