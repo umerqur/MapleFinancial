@@ -20,9 +20,15 @@ export function Hero() {
         />
       </div>
 
-      {/* Layer 2 — ivory wash: mostly white, a whisper of cream at the base for warmth */}
+      {/* Layer 2a — broad white atmospheric wash: whiter sky, clean corners */}
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/72 via-white/58 to-cream-50/72"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/68 to-white/76"
+        aria-hidden
+      />
+
+      {/* Layer 2b — soft radial Maple warmth near the content zone, fading to transparent so corners stay white */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_42%_58%,rgba(245,241,230,0.45),rgba(245,241,230,0.18)_45%,transparent_78%)]"
         aria-hidden
       />
 
