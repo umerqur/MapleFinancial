@@ -28,7 +28,7 @@ export function Hero() {
 
       {/* Layer 2b — left-anchored white fade: the left edge dissolves inward toward center */}
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/80 via-white/25 to-transparent"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/58 via-white/16 to-transparent"
         aria-hidden
       />
 
