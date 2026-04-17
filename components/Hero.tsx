@@ -11,18 +11,18 @@ export function Hero() {
         aria-hidden
       >
         <Image
-          src="/toronto-skyline.svg"
+          src="/maple_hero.png"
           alt=""
           fill
           priority={false}
           sizes="100vw"
-          className="select-none object-cover object-bottom opacity-[0.07] grayscale saturate-0 [transform:scale(1.04)] md:opacity-[0.09]"
+          className="select-none object-cover object-center opacity-[0.09] saturate-[.2] [transform:scale(1.04)] md:opacity-[0.13]"
         />
       </div>
 
       {/* Layer 2 — cream wash to keep the palette and push the image subconscious */}
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-cream-50/90 via-cream-50/80 to-cream-50/95"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-cream-50/80 via-cream-50/70 to-cream-50/90"
         aria-hidden
       />
 
