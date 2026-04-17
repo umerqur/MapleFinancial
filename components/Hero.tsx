@@ -20,15 +20,27 @@ export function Hero() {
         />
       </div>
 
-      {/* Layer 2a — broad white atmospheric wash: whiter sky, clean corners */}
+      {/* Layer 2a — broad white atmospheric wash: whiter sky up top, airier overall */}
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/68 to-white/76"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/90 via-white/55 to-white/72"
         aria-hidden
       />
 
-      {/* Layer 2b — soft radial Maple warmth near the content zone, fading to transparent so corners stay white */}
+      {/* Layer 2b — left-anchored white fade: the left edge dissolves inward toward center */}
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_42%_58%,rgba(245,241,230,0.45),rgba(245,241,230,0.18)_45%,transparent_78%)]"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-white/80 via-white/25 to-transparent"
+        aria-hidden
+      />
+
+      {/* Layer 2c — corner/edge brightener: transparent in the middle, pure white into the corners and upper sky */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_72%_62%_at_50%_56%,transparent_38%,rgba(255,255,255,0.45)_82%,rgba(255,255,255,0.7)_100%)]"
+        aria-hidden
+      />
+
+      {/* Layer 2d — whisper of light Maple warmth at the content zone, fading to transparent so corners stay white */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_42%_36%_at_44%_60%,rgba(240,230,205,0.32),rgba(240,230,205,0.14)_55%,transparent_78%)]"
         aria-hidden
       />
 
