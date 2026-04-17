@@ -20,9 +20,9 @@ export function Hero() {
         />
       </div>
 
-      {/* Layer 2 — cream wash to keep the palette and push the image subconscious */}
+      {/* Layer 2 — ivory wash: mostly white, a whisper of cream at the base for warmth */}
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-cream-50/74 via-cream-50/64 to-cream-50/84"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/72 via-white/58 to-cream-50/72"
         aria-hidden
       />
 
